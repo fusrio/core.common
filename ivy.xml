@@ -1,0 +1,19 @@
+
+<ivy-module version="2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="http://ant.apache.org/ivy/schemas/ivy.xsd">
+    <info
+        organisation="io.fusr"
+        module="io.fusr.launcher"
+        status="integration">
+	</info>
+    <configurations>
+    	<conf name="compile"  description="required libraries to compile project"/>
+    	<conf name="run"  description="required libraries to run project"/>
+    	<conf name="test" visibility="private" description="required libraries for testing"/>
+    </configurations>
+	<dependencies>
+		<dependency org="io.vertx" name="vertx-core" rev="3.3.0"/>
+		<dependency org="ch.qos.logback" name="logback-classic" rev="1.1.7"/>
+		<dependency org="commons-io" name="commons-io" rev="2.5"/>
+	</dependencies>
+</ivy-module>
